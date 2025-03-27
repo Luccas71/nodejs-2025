@@ -1,0 +1,89 @@
+- NODE: 
+    - O que é: 
+        - permite utilização de JS no servidor
+        - v8 + libuv + modules
+    - Caracteristicas:
+        - baseado em eventos
+        - call stack
+        - single thread
+        - non-blocking I/O
+    - Event Loop:
+        - ultima entrar, primeira sair 
+        - escuta uma func por vez e demanda pra uma thread disponivel
+        - 4 threads por padrao
+
+    - Gerenciador de pacotes:
+        - npm e yarn
+        - instalar lib externas
+        - disponibilizar libs
+        - vamos utilizar yarn
+    
+    - Framework:
+        - express
+        - egg.js
+        - Nest JS
+        - Adonis JS
+    
+    - API Rest:
+        - Application Programming Interface
+        - conjunto de espicificações de possiveis entre aplicações
+        - documentação
+    
+    - REST:
+        - modelo de arquitetura
+        - 6 regras:
+            1- client-server
+            2- stateless
+            3- cache
+            4- inteface uniforme
+                - indentificação de recursos:
+                    - http://server.com/products
+                    - http://server.com/clients
+                - representação de recursos
+                - mensagens auto-descritivas
+                - HETEOAS: retornar links na requisição
+            5- camadas
+            6- codigo sob demanda
+        
+    - HTTP Verbs:
+        - GET: leitura, pesquisa
+        - POST: criação de dados
+        - PUT: atualizição 
+        - DELETE: deletar dados
+        - PATCH: atualização "parcial" (pode usar PUT)
+
+    - HTTP CODES:
+        - 1XX - informativo
+        - 2XX - conformação
+            - 200: OK
+            - 201: created
+        - 3XX - redirecionamento
+        - 4XX - erros de cliente
+            - 400: bad request
+            - 401: unauthorized
+            - 403: forbidden
+            - 404: not found
+            - 422: unprocessable entity
+        - 5XX - errros de servidor
+            - 500: internal server errro
+            - 502: bad gateway
+
+    - Parametros das requisições:
+        - Header:
+            method: GET
+            scheme: https
+            path: /api/1/journey
+        - Query:
+            http://server.com/page=3&limit=50
+            . chave(page)
+            . valor(3)
+            . separador(&)
+        - Router:
+            - http://server.com/user/{id}
+        - Body:
+            {
+                "name": "Lucas",
+                "age": 31
+            }
+                    
+     
